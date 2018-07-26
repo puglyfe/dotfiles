@@ -44,6 +44,7 @@ brew tap caskroom/cask
 brew install brew-cask-completion
 brew cask install alfred
 brew cask install firefox
+brew cask install numi
 brew cask install scroll-reverser
 brew cask install spectacle
 brew cask install spotify
