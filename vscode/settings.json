@@ -1,4 +1,4 @@
-{  
+{
   // Code Spell Checker
   // ---------------------------------------------------------------------------
 
@@ -48,24 +48,26 @@
   //   "yml"
   // ],
   // "cSpell.showStatus": false,
-  
+
   // Color Highlight Extension
   // ---------------------------------------------------------------------------
-  
+
   "color-highlight.markerType": "dot-before",
   "color-highlight.markRuler": false,
-  
+
   // CSS Class Completion
   // ---------------------------------------------------------------------------
-  
+
   // "html-css-class-completion.enableEmmetSupport": true,
 
   // Editor
   // ---------------------------------------------------------------------------
-  
+
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "phase",
   "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderControlCharacters": true,
+  "editor.renderIndentGuides": true,
   "editor.renderWhitespace": "boundary",
   "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 12,
@@ -83,10 +85,10 @@
   // "[javascriptreact]": {
   //   "editor.rulers": [80]
   // },
-      
+
   // Emmet
   // ---------------------------------------------------------------------------
-  
+
   "emmet.triggerExpansionOnTab": true,
   // "emmet.includeLanguages": {
   //   "postcss": "css",
@@ -98,21 +100,22 @@
 
   // ESLint
   // ---------------------------------------------------------------------------
-  
+
   "eslint.autoFixOnSave": false,
-  
+
   // Files
   // ---------------------------------------------------------------------------
-  
+
   // "files.associations": {
   //   "*.css": "postcss",
   //   ".*": "shellscript"
   // },
   // "files.autoSave": "onFocusChange",
-  
+  "files.trimTrailingWhitespace": true,
+
   // GitLens
   // ---------------------------------------------------------------------------
-  
+
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.statusBar.enabled": false,
@@ -123,10 +126,10 @@
   "gitlens.advanced.messages": {
     "suppressShowKeyBindingsNotice": true
   },
-  
+
   // HTML
   // ---------------------------------------------------------------------------
-  
+
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": true,
 
@@ -137,20 +140,20 @@
 
   // Prettier
   // ---------------------------------------------------------------------------
-  
+
   "prettier.eslintIntegration": true,
   "prettier.stylelintIntegration": true,
-  
+
   // Python Extension
   // ---------------------------------------------------------------------------
-  
+
   // "python.pythonPath": "/usr/local/bin/python",
-  
+
   // SCM
   // ---------------------------------------------------------------------------
-  
+
   "scm.diffDecorations": "gutter",
-  
+
   // Search
   // ---------------------------------------------------------------------------
 
@@ -186,12 +189,11 @@
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.statusBar.visible": true,
   "workbench.statusBar.feedback.visible": false,
-  "workbench.activityBar.visible": false,
   "workbench.editor.tabCloseButton": "off",
-  
+
   // Make info, error and warning decorations in overview ruler transparent
   // "workbench.colorCustomizations": {
-  //   "editorOverviewRuler.errorForeground": "#0000",
+  // "editorOverviewRuler.errorForeground": "#0000",
   //   "editorOverviewRuler.infoForeground": "#0000",
   //   "editorOverviewRuler.warningForeground": "#0000",
   // },

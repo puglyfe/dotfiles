@@ -3,7 +3,7 @@
 [core]
   autoctrl = input
   excludesfile = /Users/cpugmire/.gitignore_global
-  editor = nvim
+  editor = nano
 [merge]
   ff = false
 [push]
@@ -101,7 +101,7 @@
   su = set-upstream
 [difftool "sourcetree"]
   cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
-  path = 
+  path =
 [mergetool "sourcetree"]
   cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
   trustExitCode = true

@@ -99,6 +99,7 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="code ~/.zshrc"
 alias ohmyzsh="code ~/.oh-my-zsh"
 alias -g holler="echo 'holler' | terminal-notifier -sound default"
+alias gs="git status"
 
 # Enable "fuck" tool - https://github.com/nvbn/thefuck
 eval $(thefuck --alias)
