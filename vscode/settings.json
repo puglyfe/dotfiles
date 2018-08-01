@@ -1,54 +1,4 @@
 {
-  // Code Spell Checker
-  // ---------------------------------------------------------------------------
-
-  // "cSpell.userWords": [
-  //   "Guid",
-  //   "Keymap",
-  //   "Menlo",
-  //   "Monokai",
-  //   "Neovim",
-  //   "gitlens",
-  //   "lifecycle",
-  //   "monospace",
-  //   "oauth",
-  //   "postcss",
-  //   "pylint",
-  //   "repo",
-  //   "stylelint",
-  //   "subdomain"
-  // ],
-  // "cSpell.enabledLanguageIds": [
-  //   "asciidoc",
-  //   "c",
-  //   "cpp",
-  //   "csharp",
-  //   "css",
-  //   "go",
-  //   "handlebars",
-  //   "html",
-  //   "jade",
-  //   "javascript",
-  //   "javascriptreact",
-  //   "json",
-  //   "jsonc",
-  //   "latex",
-  //   "less",
-  //   "markdown",
-  //   "php",
-  //   "plaintext",
-  //   "pub",
-  //   "python",
-  //   "restructuredtext",
-  //   "rust",
-  //   "scss",
-  //   "text",
-  //   "typescript",
-  //   "typescriptreact",
-  //   "yml"
-  // ],
-  // "cSpell.showStatus": false,
-
   // Color Highlight Extension
   // ---------------------------------------------------------------------------
 
@@ -72,8 +22,6 @@
   "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 12,
   "editor.fontWeight": "400",
-  // "editor.letterSpacing": 0.3,
-  // "editor.lineHeight": 22,
   "editor.minimap.enabled": true,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
@@ -144,11 +92,6 @@
   "prettier.eslintIntegration": true,
   "prettier.stylelintIntegration": true,
 
-  // Python Extension
-  // ---------------------------------------------------------------------------
-
-  // "python.pythonPath": "/usr/local/bin/python",
-
   // SCM
   // ---------------------------------------------------------------------------
 
@@ -171,8 +114,6 @@
   // ---------------------------------------------------------------------------
 
   "terminal.integrated.cursorBlinking": true,
-  // "terminal.integrated.fontSize": 14,
-  // "terminal.integrated.lineHeight": 1.2,
 
   // Window
   // ---------------------------------------------------------------------------

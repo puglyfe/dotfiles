@@ -18,7 +18,7 @@ cd ~/.dotfiles
 ## Run additional install scripts
 
 ```sh
-./bash/install.sh
+./zsh/install.sh
 ./git/install.sh
 ./node/install.sh
 ./vscode/install.sh
@@ -26,5 +26,4 @@ cd ~/.dotfiles
 
 ## Heavily influenced by the following .dotfiles projects
 
-* [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
-* [Springload](https://github.com/springload/dotfiles)
+* [Dennis Evert](https://github.com/devert/dotfiles-osx)
