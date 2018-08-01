@@ -21,8 +21,13 @@ brew install zsh
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+echo "Set ZSH as default shell and switch to ZSH."
+
 # Set ZSH as default shell.
 chsh -s $(which zsh)
+
+# Switch to ZSH
+exec $SHELL
 
 # Reload ZSH
 source ~/.zshrc
