@@ -13,7 +13,7 @@ if [[ $? -eq 0 ]];then
     read -r -p "Do you want to install VSCode extensions? [y|N] " configresponse
     if [[ $configresponse =~ ^(y|yes|Y) ]];then
         echo "Installing extensions please wait..."
-        
+
         code --install-extension alefragnani.project-manager
         code --install-extension christian-kohler.npm-intellisense
         code --install-extension cpylua.language-postcss
@@ -21,9 +21,11 @@ if [[ $? -eq 0 ]];then
         code --install-extension eamodio.gitlens
         code --install-extension EditorConfig.EditorConfig
         code --install-extension esbenp.prettier-vscode
+        code --install-extension file-icons.file-icons
         code --install-extension formulahendry.auto-close-tag
         code --install-extension formulahendry.auto-rename-tag
-        code --install-extension file-icons.file-icons
+        code --install-extension ghmcadams.lintlens
+        code --install-extension ms-vsliveshare.vsliveshare
         code --install-extension msjsdiag.debugger-for-chrome
         code --install-extension naumovs.color-highlight
         code --install-extension octref.vetur

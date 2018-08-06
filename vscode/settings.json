@@ -59,6 +59,9 @@
   //   ".*": "shellscript"
   // },
   // "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.git": false
+  },
   "files.trimTrailingWhitespace": true,
 
   // GitLens
