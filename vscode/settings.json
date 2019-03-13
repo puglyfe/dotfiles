@@ -15,17 +15,18 @@
 
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "phase",
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.renderControlCharacters": true,
-  "editor.renderIndentGuides": true,
-  "editor.renderWhitespace": "boundary",
   "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 12,
   "editor.fontWeight": "400",
   "editor.minimap.enabled": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderControlCharacters": true,
+  "editor.renderIndentGuides": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.selectionHighlight": false,
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
-  "editor.selectionHighlight": false,
+  "editor.wordWrap": "bounded",
   // "editor.rulers": [80],
   // "[javascript]": {
   //   "editor.rulers": [80]
@@ -146,4 +147,10 @@
   // ---------------------------------------------------------------------------
 
   "zenMode.centerLayout": false,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.fileHistory.location": "scm",
+  "gitlens.views.lineHistory.enabled": true,
+  "gitlens.views.lineHistory.location": "scm",
+  "gitlens.views.compare.location": "scm",
+  "gitlens.views.search.location": "scm",
 }

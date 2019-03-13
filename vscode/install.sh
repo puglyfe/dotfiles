@@ -15,6 +15,7 @@ if [[ $? -eq 0 ]];then
         echo "Installing extensions please wait..."
 
         code --install-extension alefragnani.project-manager
+        code --install-extension ChakrounAnas.turbo-console-log
         code --install-extension christian-kohler.npm-intellisense
         code --install-extension cpylua.language-postcss
         code --install-extension dbaeumer.vscode-eslint
