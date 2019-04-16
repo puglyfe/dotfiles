@@ -109,6 +109,11 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
+# Start/Stop AEM instances via CLI
+alias aemstart="~/Sites/AEM/6.4-author/crx-quickstart/bin/start"
+alias aemstatus="~/Sites/AEM/6.4-author/crx-quickstart/bin/status"
+alias aemstop="~/Sites/AEM/6.4-author/crx-quickstart/bin/stop"
+
 # Enable "fuck" tool - https://github.com/nvbn/thefuck
 eval $(thefuck --alias)
 
