@@ -26,14 +26,17 @@ if [[ $? -eq 0 ]];then
         code --install-extension formulahendry.auto-close-tag
         code --install-extension formulahendry.auto-rename-tag
         code --install-extension ghmcadams.lintlens
+        code --install-extension jpoissonnier.vscode-styled-components
         code --install-extension ms-vsliveshare.vsliveshare
         code --install-extension msjsdiag.debugger-for-chrome
         code --install-extension naumovs.color-highlight
         code --install-extension octref.vetur
         code --install-extension patbenatar.advanced-new-file
         code --install-extension shinnn.stylelint
+        code --install-extension wayou.vscode-todo-highlight
         code --install-extension wix.vscode-import-cost
         code --install-extension wwm.better-align
+        code --install-extension xabikos.reactsnippets
 
         echo "Extensions for VSCode have been installed. Please restart VSCode."
     else
