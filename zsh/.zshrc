@@ -109,6 +109,8 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
+alias adddockspace="defaults write com.apple.dock persistent-apps -array-add '{\"tile-type\"=\"spacer-tile\";}'; killall Dock"
+
 # Start/Stop AEM instances via CLI
 alias aemstart="~/Sites/AEM/6.4-author/crx-quickstart/bin/start"
 alias aemstatus="~/Sites/AEM/6.4-author/crx-quickstart/bin/status"
