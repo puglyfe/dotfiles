@@ -2,10 +2,8 @@
   ui = true
 [core]
   autoctrl = input
-  excludesfile = /Users/cpugmire/.gitignore_global
+  excludesfile = ~/.gitignore_global
   editor = nano
-[merge]
-  ff = false
 [push]
   default = current
 [alias]
@@ -106,7 +104,10 @@
   cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
   trustExitCode = true
 [commit]
-  template = /Users/cpugmire/.stCommitMsg
+  template = ~/.stCommitMsg
 [user]
   name = Charley
   email = ctpugmire@gmail.com
+
+[includeIf "gitdir:~/Sites/pantheon/"]
+    path = ~/.gitconfig-pantheon

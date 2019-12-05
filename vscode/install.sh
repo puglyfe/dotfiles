@@ -27,6 +27,7 @@ if [[ $? -eq 0 ]];then
         code --install-extension formulahendry.auto-rename-tag
         code --install-extension ghmcadams.lintlens
         code --install-extension jpoissonnier.vscode-styled-components
+        code --install-extension mohsen1.prettify-json
         code --install-extension ms-vsliveshare.vsliveshare
         code --install-extension msjsdiag.debugger-for-chrome
         code --install-extension naumovs.color-highlight
