@@ -10,16 +10,23 @@
 
   // "html-css-class-completion.enableEmmetSupport": true,
 
+  // Diff Editor
+  // ---------------------------------------------------------------------------
+
+  ZZ"diffEditor.ignoreTrimWhitespace": false,
+
   // Editor
   // ---------------------------------------------------------------------------
 
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "phase",
   "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontWeight": "400",
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
   "editor.minimap.enabled": true,
   "editor.multiCursorModifier": "alt",
   "editor.renderControlCharacters": true,
@@ -58,6 +65,7 @@
   "files.exclude": {
     "**/.git": false
   },
+  "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
 
   // GitLens
@@ -158,8 +166,7 @@
   // Zen Mode
   // ---------------------------------------------------------------------------
 
-  "zenMode.centerLayout": false,
-  "files.insertFinalNewline": true
+  "zenMode.centerLayout": false
 
   // Placeholder - Settings generated dynamically by VS Code will go here.
   // ---------------------------------------------------------------------------
