@@ -13,20 +13,22 @@
   // Diff Editor
   // ---------------------------------------------------------------------------
 
-  ZZ"diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": false,
 
   // Editor
   // ---------------------------------------------------------------------------
 
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll": true,
+  //   "source.fixAll.eslint": true
+  // },
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "phase",
   "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontWeight": "400",
   "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
   "editor.minimap.enabled": true,
   "editor.multiCursorModifier": "alt",
   "editor.renderControlCharacters": true,
@@ -36,23 +38,16 @@
   "editor.snippetSuggestions": "top",
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
-  // "editor.rulers": [80],
-  // "[javascript]": {
-  //   "editor.rulers": [80]
-  // },
-  // "[javascriptreact]": {
-  //   "editor.rulers": [80]
-  // },
 
   // Emmet
   // ---------------------------------------------------------------------------
 
   "emmet.triggerExpansionOnTab": true,
 
-  // ES Lint
+  // ESLint
   // ---------------------------------------------------------------------------
 
-  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
 
   // Files
   // ---------------------------------------------------------------------------
@@ -61,7 +56,7 @@
   //   "*.css": "postcss",
   //   ".*": "shellscript"
   // },
-  // "files.autoSave": "onFocusChange",
+
   "files.exclude": {
     "**/.git": false
   },
@@ -75,11 +70,8 @@
     "suppressShowKeyBindingsNotice": true
   },
   "gitlens.codeLens.enabled": false,
-  "gitlens.currentLine.enabled": false,
+  "gitlens.currentLine.enabled": true,
   "gitlens.statusBar.enabled": false,
-  "gitlens.resultsExplorer.location": "scm",
-  "gitlens.historyExplorer.enabled": true,
-  "gitlens.historyExplorer.location": "scm",
   "gitlens.keymap": "none",
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.fileHistory.location": "scm",
@@ -104,15 +96,15 @@
 
   "npm.packageManager": "yarn",
 
+  // Prettier
+  // ---------------------------------------------------------------------------
+
+  "prettier.packageManager": "yarn",
+
   // SCM
   // ---------------------------------------------------------------------------
 
   "scm.diffDecorations": "gutter",
-
-  // Search
-  // ---------------------------------------------------------------------------
-
-  // "search.location": "sidebar",
 
   // Stylelint Extension
   // ---------------------------------------------------------------------------
@@ -134,11 +126,6 @@
   "turboConsoleLog.addSemicolonInTheEnd": true,
   "turboConsoleLog.quote": "'",
 
-  // VS Intellicode
-  // ---------------------------------------------------------------------------
-
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
   // Window
   // ---------------------------------------------------------------------------
 
@@ -155,13 +142,6 @@
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.statusBar.visible": true,
   "workbench.editor.tabCloseButton": "off",
-
-  // Make info, error and warning decorations in overview ruler transparent
-  // "workbench.colorCustomizations": {
-  // "editorOverviewRuler.errorForeground": "#0000",
-  //   "editorOverviewRuler.infoForeground": "#0000",
-  //   "editorOverviewRuler.warningForeground": "#0000",
-  // },
 
   // Zen Mode
   // ---------------------------------------------------------------------------
