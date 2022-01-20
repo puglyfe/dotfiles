@@ -5,7 +5,7 @@ Setup, software installation and dotfiles for OSX.
 ## Install [Homebrew](http://brew.sh/)
 
 ```sh
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ## Install Homebrew Packages and Casks
@@ -26,4 +26,4 @@ cd ~/.dotfiles
 
 ## Heavily influenced by the following .dotfiles projects
 
-* [Dennis Evert](https://github.com/devert/dotfiles-osx)
+- [Dennis Evert](https://github.com/devert/dotfiles-osx)

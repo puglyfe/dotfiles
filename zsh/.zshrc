@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/cpugmire/.oh-my-zsh"
+export ZSH="/Users/charleypugmire/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -63,6 +63,7 @@ ZSH_THEME="robbyrussell"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  kubectl
 )
 
 # Fix for permissions errors on startup.
@@ -111,11 +112,6 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 
 alias adddockspace="defaults write com.apple.dock persistent-apps -array-add '{\"tile-type\"=\"spacer-tile\";}'; killall Dock"
 
-# Start/Stop AEM instances via CLI
-alias aemstart="~/Sites/AEM/6.4-author/crx-quickstart/bin/start"
-alias aemstatus="~/Sites/AEM/6.4-author/crx-quickstart/bin/status"
-alias aemstop="~/Sites/AEM/6.4-author/crx-quickstart/bin/stop"
-
 # Enable "fuck" tool - https://github.com/nvbn/thefuck
 eval $(thefuck --alias)
 
@@ -146,3 +142,13 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
+
+# Get ESLint config
+# eslc <file> <rule>
+function eslc() {
+  local FILE=${1:?"Must specify a file the rule applies to."}
+  local RULE=${2:?"The rule must be specified."}
+
+  eslint --print-config "$FILE" | jq '.rules["'$RULE'"]'
+}
+

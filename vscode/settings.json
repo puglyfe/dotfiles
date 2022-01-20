@@ -66,16 +66,12 @@
   // GitLens
   // ---------------------------------------------------------------------------
 
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": true,
   "gitlens.statusBar.enabled": false,
   "gitlens.keymap": "none",
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.fileHistory.location": "scm",
-  "gitlens.views.lineHistory.enabled": true,
   "gitlens.views.lineHistory.location": "scm",
   "gitlens.views.compare.location": "scm",
   "gitlens.views.search.location": "scm",
@@ -86,20 +82,10 @@
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": true,
 
-  // JavaScript
-  // ---------------------------------------------------------------------------
-
-  "javascript.implicitProjectConfig.experimentalDecorators": true,
-
   // NPM
   // ---------------------------------------------------------------------------
 
   "npm.packageManager": "yarn",
-
-  // Prettier
-  // ---------------------------------------------------------------------------
-
-  "prettier.packageManager": "yarn",
 
   // SCM
   // ---------------------------------------------------------------------------
@@ -125,11 +111,6 @@
 
   "turboConsoleLog.addSemicolonInTheEnd": true,
   "turboConsoleLog.quote": "'",
-
-  // Window
-  // ---------------------------------------------------------------------------
-
-  "window.zoomLevel": 1,
   "window.newWindowDimensions": "inherit",
 
   // Workbench
@@ -146,7 +127,48 @@
   // Zen Mode
   // ---------------------------------------------------------------------------
 
-  "zenMode.centerLayout": false
+  "zenMode.centerLayout": false,
+  "sync.gist": "ae4ef5dd1e4b329b59bcd29f971fee6c",
+  "terminal.integrated.copyOnSelection": true,
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "html",
+    "vue"
+  ],
+  "todo-tree.tree.showScanModeButton": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.includeLanguages": {
+    "javascriptreact": "javascript"
+  },
+  "editor.accessibilitySupport": "off",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "launchdarkly.project": "default",
+  "launchdarkly.env": "test",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "path-intellisense.mappings": {},
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "window.zoomLevel": 1
 
   // Placeholder - Settings generated dynamically by VS Code will go here.
   // ---------------------------------------------------------------------------
