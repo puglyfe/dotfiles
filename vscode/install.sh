@@ -27,6 +27,7 @@ if [[ $? -eq 0 ]];then
         code --install-extension formulahendry.auto-rename-tag
         code --install-extension ghmcadams.lintlens
         code --install-extension jpoissonnier.vscode-styled-components
+        code --install-extension maxvanderschee.web-accessibility
         code --install-extension mikestead.dotenv
         code --install-extension mohsen1.prettify-json
         code --install-extension ms-vsliveshare.vsliveshare
@@ -36,7 +37,9 @@ if [[ $? -eq 0 ]];then
         code --install-extension patbenatar.advanced-new-file
         code --install-extension shinnn.stylelint
         code --install-extension suming.react-proptypes-generate
+        code --install-extension ue.alphabetical-sorter
         code --install-extension wayou.vscode-todo-highlight
+        code --install-extension wesbos.theme-cobalt2
         code --install-extension wix.vscode-import-cost
         code --install-extension wwm.better-align
         code --install-extension xabikos.reactsnippets

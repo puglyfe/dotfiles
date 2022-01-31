@@ -18,10 +18,6 @@
   // Editor
   // ---------------------------------------------------------------------------
 
-  // "editor.codeActionsOnSave": {
-  //   "source.fixAll": true,
-  //   "source.fixAll.eslint": true
-  // },
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "phase",
   "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
@@ -32,7 +28,7 @@
   "editor.minimap.enabled": true,
   "editor.multiCursorModifier": "alt",
   "editor.renderControlCharacters": true,
-  "editor.renderIndentGuides": true,
+
   "editor.renderWhitespace": "boundary",
   "editor.selectionHighlight": false,
   "editor.snippetSuggestions": "top",
@@ -48,6 +44,19 @@
   // ---------------------------------------------------------------------------
 
   "eslint.alwaysShowStatus": true,
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "html",
+    "vue"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
 
   // Files
   // ---------------------------------------------------------------------------
@@ -104,7 +113,9 @@
   // ---------------------------------------------------------------------------
 
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
 
   // Turbo Console Log
   // ---------------------------------------------------------------------------
@@ -112,10 +123,6 @@
   "turboConsoleLog.addSemicolonInTheEnd": true,
   "turboConsoleLog.quote": "'",
   "window.newWindowDimensions": "inherit",
-
-  // Workbench
-  // ---------------------------------------------------------------------------
-
   "workbench.colorTheme": "Cobalt2",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.iconTheme": "file-icons",
@@ -123,6 +130,10 @@
   "workbench.quickOpen.closeOnFocusLost": false,
   "workbench.statusBar.visible": true,
   "workbench.editor.tabCloseButton": "off",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "workbench.tree.renderIndentGuides": "onHover",
 
   // Zen Mode
   // ---------------------------------------------------------------------------
@@ -130,14 +141,20 @@
   "zenMode.centerLayout": false,
   "sync.gist": "ae4ef5dd1e4b329b59bcd29f971fee6c",
   "terminal.integrated.copyOnSelection": true,
-  "eslint.probe": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "html",
-    "vue"
-  ],
+
   "todo-tree.tree.showScanModeButton": false,
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.includeLanguages": {
+    "javascriptreact": "javascript"
+  },
+  "editor.accessibilitySupport": "off",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "path-intellisense.mappings": {},
+  "window.zoomLevel": 1,
+
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -147,28 +164,10 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "tailwindCSS.emmetCompletions": true,
-  "tailwindCSS.includeLanguages": {
-    "javascriptreact": "javascript"
-  },
-  "editor.accessibilitySupport": "off",
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
-  },
-  "launchdarkly.project": "default",
-  "launchdarkly.env": "test",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "path-intellisense.mappings": {},
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "terminal.integrated.env.osx": {
-    "FIG_NEW_SESSION": "1"
-  },
-  "window.zoomLevel": 1
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  }
 
   // Placeholder - Settings generated dynamically by VS Code will go here.
   // ---------------------------------------------------------------------------
