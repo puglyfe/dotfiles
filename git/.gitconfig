@@ -2,114 +2,25 @@
   ui = true
 [core]
   autoctrl = input
-	excludesfile = /Users/charleypugmire/.gitignore_global
+	excludesfile = ~/.gitignore_global
   editor = nano
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+[filter "lfs"]
+  required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+[init]
+  defaultBranch = main
+[mergetool "sourcetree"]
+  cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
 [push]
   default = current
-[alias]
-  # add
-  a = add                         # addq
-  aa = add --all                  # add all files
-  au = add -u                     # add all deleted files
-  ap = add --patch                # stage commits chunk by chunk
-
-  # output all aliases
-  la = "!git config --get-regexp '^alias\\.' | cut -c 7- | sed 's/ / = /'"
-
-  # branch
-  b = branch -v                   # branch (verbose)
-  bd = branch -d                  # branch delete
-  bdf = branch -D                 # branch force delete
-  dmb = delete-merged-branches    # shortcut for git-extras delete-merged-branches (https://github.com/tj/git-extras/blob/master/Commands.md#git-delete-merged-branches)
-
-  # commit
-  c = commit -m                   # commit with message
-  ca = commit -am                 # commit all with message
-  amend = commit --amend          # amend your last commit
-
-  # checkout
-  co = checkout                   # checkout
-  nb = checkout -b                # create and switch to a new branch (mnemonic: "git new branch branchname...")
-
-  # diff
-  d = diff                        # diff unstaged changes
-  dc = diff --cached              # diff staged changes
-  last = diff HEAD^               # diff last committed change
-
-  # update-index
-  ignore-change = !git update-index --assume-unchanged
-  ic = ignore-change
-  unignore-change = !git update-index --no-assume-unchanged
-  uc = unignore-change
-  ignored = !git ls-files -v | grep ^[a-z]
-
-  # log
-  l = log --graph --date=short
-  changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
-  changes-log = log --pretty=format:\" * %s\"
-  short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
-  shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
-
-  # pull
-  pl = pull
-
-  # prune
-  po = remote prune origin
-
-  # pull request
-  pr = !hub pull-request
-
-  # push
-  ps = push
-
-  # rebase
-  rc = rebase --continue          # continue rebase
-  rs = rebase --skip              # skip rebase
-
-  # remote
-  rv = remote -v                  # show remotes (verbose)
-
-  # reset
-  rhh = reset --hard HEAD
-  unstage = reset HEAD            # remove files from index (tracking)
-  uncommit = reset --soft HEAD^   # go back before last commit, with files in uncommitted state
-  filelog = log -u                # show changes to a file
-  mt = mergetool                  # fire up the merge tool
-
-  # stash
-  ss = stash                      # stash changes
-  sl = stash list                 # list stashes
-  sa = stash apply                # apply stash (restore changes)
-  sd = stash drop                 # drop stashes (destory changes)
-
-  # status
-  s = status                      # status
-  st = status                     # status
-  stat = status                   # status
-
-  # tag
-  t = tag -n                      # show tags with <n> lines of each tag message
-
-  # https://adamcod.es/2014/12/10/git-pull-correct-workflow.html
-  update-from = "!f() { git fetch $1 --prune; git merge --ff-only $1/$2 || git rebase --preserve-merges $1/$2; }; f"
-  uf = update-from
-
-  # https://zarino.co.uk/post/git-set-upstream/
-  set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
-  su = set-upstream
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
-# [commit]
-#   template = ~/.stCommitMsg
 [user]
   name = Charley
   email = ctpugmire@gmail.com
-
-[includeIf "gitdir:~/Sites/pantheon/"]
-    path = ~/.gitconfig-pantheon
-[init]
-	defaultBranch = main
+[includeIf "gitdir:~/code/fast/"]
+    path = ~/.gitconfig-fast
