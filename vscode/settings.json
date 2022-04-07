@@ -14,21 +14,22 @@
   // ---------------------------------------------------------------------------
 
   "diffEditor.ignoreTrimWhitespace": false,
-
-  // Editor
-  // ---------------------------------------------------------------------------
-
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "phase",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Operator Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontWeight": "400",
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
+  "editor.glyphMargin": false,
+  "editor.linkedEditing": true,
   "editor.minimap.enabled": true,
   "editor.multiCursorModifier": "alt",
   "editor.renderControlCharacters": true,
-
   "editor.renderWhitespace": "boundary",
   "editor.selectionHighlight": false,
   "editor.snippetSuggestions": "top",
@@ -96,6 +97,12 @@
 
   "npm.packageManager": "yarn",
 
+  // PropTypesGenerate
+  // ---------------------------------------------------------------------------
+
+  "propTypes.afterFormat": false,
+  "propTypes.autoImport": "ES6",
+
   // SCM
   // ---------------------------------------------------------------------------
 
@@ -147,13 +154,8 @@
   "tailwindCSS.includeLanguages": {
     "javascriptreact": "javascript"
   },
-  "editor.accessibilitySupport": "off",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
+
   "path-intellisense.mappings": {},
-  "window.zoomLevel": 1,
 
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -167,7 +169,9 @@
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
-  }
+  },
+  "editor.formatOnSave": true,
+  "window.zoomLevel": 1
 
   // Placeholder - Settings generated dynamically by VS Code will go here.
   // ---------------------------------------------------------------------------

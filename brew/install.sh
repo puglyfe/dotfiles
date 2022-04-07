@@ -37,12 +37,13 @@ brew install brew-cask-completion
 brew install --cask alfred
 # brew install --cask backblaze
 # brew install --cask bettertouchtool
-brew install --cask dropbox
+# brew install --cask dropbox
 brew install --cask firefox
 # brew install --cask fl-studio
-brew install --cask google-chrome
+# brew install --cask google-chrome
 # brew install --cask kap
 brew install --cask rectangle
-brew install --cask slack
+# brew install --cask slack
 brew install --cask spotify
+brew install --cask sourcetree
 brew install --cask visual-studio-code
