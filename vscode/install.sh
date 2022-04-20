@@ -33,7 +33,7 @@ if [[ $? -eq 0 ]];then
         code --install-extension ms-vsliveshare.vsliveshare
         code --install-extension msjsdiag.debugger-for-chrome
         code --install-extension naumovs.color-highlight
-        code --install-extension octref.vetur
+        # code --install-extension octref.vetur
         code --install-extension patbenatar.advanced-new-file
         code --install-extension shinnn.stylelint
         code --install-extension suming.react-proptypes-generate

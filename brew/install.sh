@@ -11,9 +11,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Make sure we’re using the latest Homebrew.
 brew update
 
-# Upgrade any already-installed formulae.
-brew upgrade --all
-
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -46,4 +43,4 @@ brew install --cask rectangle
 # brew install --cask slack
 brew install --cask spotify
 brew install --cask sourcetree
-brew install --cask visual-studio-code
+# brew install --cask visual-studio-code

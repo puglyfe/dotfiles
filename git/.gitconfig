@@ -2,7 +2,7 @@
   ui = true
 [core]
   autoctrl = input
-	excludesfile = /Users/charles.pugmire/.gitignore_global
+	excludesfile = /Users/charley.pugmire/.gitignore_global
   editor = nano
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
@@ -20,7 +20,9 @@
 [push]
   default = current
 [user]
-  name = Charley
-  email = ctpugmire@gmail.com
-[includeIf "gitdir:~/code/fast/"]
-    path = ~/.gitconfig-fast
+	name = Charley
+	email = ctpugmire@gmail.com
+[includeIf "gitdir:~/code/affirm/"]
+    path = ~/.gitconfig-affirm
+[commit]
+	template = /Users/charley.pugmire/.stCommitMsg
