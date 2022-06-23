@@ -49,5 +49,13 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`, `Nlsv`
 defaults write com.apple.finder FXPreferredViewStyle clmv
 
+# Default new finder windows to the Home folder
+defaults write com.apple.finder NewWindowTargetPath -string "file:///Users/charley.pugmire/"
+
+# Get rid of "tags" in the sidebar
+defaults write com.apple.finder ShowRecentTags -bool false
+
 # Disable the warning before emptying the Trash
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+killall Finder

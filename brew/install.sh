@@ -29,12 +29,12 @@ brew install yarn
 
 echo "Install Applications with Homebrew Cask"
 
-brew tap homebrew/cask-cask
 brew install brew-cask-completion
 brew install --cask alfred
 # brew install --cask backblaze
 # brew install --cask bettertouchtool
 # brew install --cask dropbox
+brew install --cask fig
 brew install --cask firefox
 # brew install --cask fl-studio
 # brew install --cask google-chrome
